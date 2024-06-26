@@ -1,15 +1,12 @@
 package org.desafio_api;
 
 import io.restassured.RestAssured;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static io.restassured.RestAssured.when;
+public class ViaCepTeste {
 
-public class test {
-    
     @Test
-    public void deveListar() {
+    public void validZipCodeTest() {
         RestAssured.given()
                 .when()
                     .get("/92440094/json")
