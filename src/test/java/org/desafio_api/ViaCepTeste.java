@@ -16,7 +16,7 @@ public class ViaCepTeste extends BaseTest {
         given()
             .spec(requestSpec)
         .when()
-            .get("92440094" + JSON)
+            .get(CEP_PUCRS + JSON)
         .then()
             .spec(responseSpecJson)
             .log().body()
