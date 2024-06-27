@@ -5,5 +5,6 @@ import org.desafio_api.utils.ObjectsUtils;
 public class EndPoints {
 
     protected static final String BASE_URI = ObjectsUtils.getPropertiesData("endpoints", "BASE_URI");
+    protected static final String JSON = ObjectsUtils.getPropertiesData("endpoints", "JSON");
 
 }
