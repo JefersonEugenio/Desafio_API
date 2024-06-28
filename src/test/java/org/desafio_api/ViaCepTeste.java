@@ -12,6 +12,7 @@ import org.junit.jupiter.api.Test;
 import java.io.File;
 
 import static io.restassured.RestAssured.given;
+import static org.hamcrest.Matchers.is;
 
 public class ViaCepTeste extends BaseTest {
 
@@ -47,6 +48,26 @@ public class ViaCepTeste extends BaseTest {
             .log().body()
             .statusCode(HttpStatus.SC_OK)
             .body(JsonSchemaValidator.matchesJsonSchemaInClasspath("schemas" + File.separator + "invalidoCEPJsonSchemas.json"));
+    }
+
+    @Feature("EXTRA")
+    @DisplayName("Verifica CEP e logradouro")
+    @Description("O usuario insere cidade e rua")
+    @Test
+    public void verificaCEPLogradouroTest() {
+        given()
+            .spec(requestSpec)
+        .when()
+            .get( EXTRA)
+        .then()
+            .spec(responseSpecJson)
+            .log().body()
+            .statusCode(HttpStatus.SC_OK)
+            .body("cep[0]", is("92440-284"))
+            .body("bairro[0]", is("Guajuviras"))
+            .body("localidade[0]", is("Canoas"))
+            .body("uf[0]", is("RS"))
+            .body(JsonSchemaValidator.matchesJsonSchemaInClasspath("schemas" + File.separator + "verificadoCEPLogradouroJsonSchemas.json"));
     }
 
 }
