@@ -11,7 +11,6 @@ public class Fakers {
 
     public String getCode() {
         code = faker.address().zipCode();
-        System.out.println("CEP: " + code);
         return code;
     }
 
