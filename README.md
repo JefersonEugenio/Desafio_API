@@ -7,9 +7,9 @@ Resolva o desafio da forma mais completa possível e utilizando todos os seus co
 ## ✅ Funcionalidades do projeto
 ### Criar uma API para realizar testes de API de CEP
 * API em URI "https://viacep.com.br/ws/CEP/json"
-* CEP com válido 
-* CEP com inválido 
-* EXTRA, coloca nome cidade e logradouro
+* Teste de contrato
+* Teste de funcional
+* Teste de performance
 ## ✅ Pré-requisitos
 Antes de começar, você vai precisar ter instaladas em sua máquina as seguintes ferramentas: Git e Maven.
 Além disso, é bom ter um editor para trabalhar com o código, como o IntelliJ IDEA.
