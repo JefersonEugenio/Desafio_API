@@ -1,20 +1,44 @@
-# DESAFIO_API
-O desafio é criar uma API para realizar testes de API de CEP
-## 📄 Descrição do projeto
-O objetivo do desafio é que você possa demonstrar seus conhecimentos em Automação de Testes.
-Conceitos como Arquitetura de Automação de API. Orientação Objetos, Design Patternse e Clean Code serão avaliados.
-Resolva o desafio da forma mais completa possível e utilizando todos os seus conhecimentos. O projeto em desenvolvimento para automação de API em URI "https://viacep.com.br/ws/CEP/json".
-## ✅ Funcionalidades do projeto
-### Criar uma API para realizar testes de API de CEP
-* API em URI "https://viacep.com.br/ws/CEP/json"
-* Teste de contrato
-* Teste de funcional
-* Teste de performance
-## ✅ Pré-requisitos
-Antes de começar, você vai precisar ter instaladas em sua máquina as seguintes ferramentas: Git e Maven.
-Além disso, é bom ter um editor para trabalhar com o código, como o IntelliJ IDEA.
+# ViaCEP
+Webservice gratuito de alto desempenho para consulta de Código de Endereçamento Postal (CEP) do Brasil.
+## Descrição do projeto
+O objetivo do desafio proposto pela empresa DB é permitir que você demonstre seus conhecimentos em Automação de Testes, com foco em conceitos como Arquitetura de Automação de API, Programação Orientada a Objetos, Design Patterns e Clean Code. O desafio deve ser resolvido de maneira completa, utilizando todo o seu conhecimento. O projeto consiste em desenvolver uma automação de API para o URI ["https://viacep.com.br/ws/CEP/json"](https://viacep.com.br/).
 
-#### Para instalar o Allure, siga o passo a passo abaixo:
+## Índice
+1. [Sobre o projeto](#sobre-o-projeto)
+2. [Funcionalidades do projeto](#funcionalidades-do-projeto)
+3. [Tecnologias usadas](#tecnologias-usadas)
+4. [Como Executar](#como-executar)
+5. [Autor](#autor)
+
+## Sobre o projeto
+A aplicação facilita a obtenção de dados como rua, bairro, cidade, estado, entre outros, fornecendo um recurso útil para aplicações que necessitam validar ou buscar informações de localização.
+
+## Funcionalidades do projeto
+* **Teste de contrato:** Valida se a resposta da API segue o contrato especificado (estrutura esperada).
+* **Teste de funcional:** Garante que os dados retornados pela API estejam corretos para diferentes entradas.
+* **Teste de performance:** Avalia o desempenho da API em cenários variados, incluindo alta carga.
+
+## Tecnologias usadas
+### Liguagem de programação:
+* [Intellij IDEA](https://www.jetbrains.com/pt-br/idea/)
+### Ferramenta:
+* [POSTMAN](https://www.postman.com/)
+* [Allure Reports](https://docs.qameta.io/allure/) (para geração de relatórios)
+* [JDK 21](https://www.oracle.com/java/technologies/javase/jdk21-archive-downloads.html)
+
+
+## Como Executar
+
+### Pré-requisitos
+Antes de começar, você vai precisar ter instaladas em sua máquina as seguintes ferramentas: 
+* Git
+* Maven
+* JDK 21
+<p>Além disso, é recomendado usar uma IDE como IntelliJ IDEA para facilitar o desenvolvimento.</p>
+
+### Passo a passo
+
+#### 1. Instalar o Allure, siga o passo a passo abaixo:
 * Abrir PowerShell e executar o comando: <br>
 ``` Set-ExecutionPolicy RemoteSigned -Scope CurrentUser ``` <br>
 - Vai aparecer algumas opções: "[S] Sim [A] Sim para Todos [N] Não [T] Não para Todos [U] Suspender [?] Ajuda (o padrão é 'N')". Digite [S] para 'Sim'. <br>
@@ -30,12 +54,21 @@ scoop install git `` <br>
 * Execute o seguinte comando no PowerShell: <br>
 `` scoop install allure ``
 - Vai iniciar o download, instalação e finalizar com 'done'.
-#### Após a execução, para visualizar relatórios no projeto:
-* Abra a pasta do projeto, clique com o botão direito e selecione "Git Bash".
-* No Git Bash, execute o comando ``allure serve allure-results``.
-### 🛠 Tecnologias
-[Intellij IDEA](https://www.jetbrains.com/pt-br/idea/) <br>
-JDK 21
+
+#### 2.Executar o projeto
+1. Clone o repositório:
+```bash
+git clone https://github.com/JefersonEugenio/Desafio_API.git
+cd Desafio_API
+```
+2. Abra o projeto na sua IDE.
+3. Execute os testes:
+* Navegue até `src/test/java/org/desafio/contrato` (ou funcional/performance)
+* Execute os métodos de teste diretamente na IDE.
+4. Para gerar relatórios:
+* No terminal, execute o comando:
+``` allure serve allure-results ```
+
 ## Autor
 | [<img src="https://avatars.githubusercontent.com/u/122066021?v=4" width=115><br><sub>Jeferson Lopes Eugenio</sub>](https://github.com/JefersonEuenio) |
 | :---: |
