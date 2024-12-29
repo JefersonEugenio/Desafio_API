@@ -20,12 +20,11 @@ A aplicação facilita a obtenção de dados como rua, bairro, cidade, estado, e
 
 ## Tecnologias usadas
 ### Liguagem de programação:
-* [Intellij IDEA](https://www.jetbrains.com/pt-br/idea/)
+* [JAVA (JDK 21)](https://www.oracle.com/java/technologies/javase/jdk21-archive-downloads.html)
 ### Ferramenta:
+* [Intellij IDEA](https://www.jetbrains.com/pt-br/idea/)
 * [POSTMAN](https://www.postman.com/)
-* [Allure Reports](https://docs.qameta.io/allure/) (para geração de relatórios)
-* [JDK 21](https://www.oracle.com/java/technologies/javase/jdk21-archive-downloads.html)
-
+* [Allure Reports](https://docs.qameta.io/allure/) (para geração de relatórios
 
 ## Como Executar
 
